@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый год</title>
+</head>
+
+<style>
+    body {
+        transition: all 1s ease-out;
+        background: url(bg-day.jpg);
+        background: url(bg-night.jpg);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#s1"><button>Таймер</button></a>
+                </li>
+
+                <li>
+                    <a href="#s2"><button>Новогодние традиции</button></a>
+                </li>
+
+                <li>
+                    <a href="#s3"><button>Подарки</button></a>
+                </li>
+
+                <li>
+                    <a href="#s4"><button>Украшение дома</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="s1">
+            <div class="timer-wrap timer_1">
+                <div class="timer__block">
+                    <span class="days">12</span>
+                    <p class="timer-text">дней</p>
+                </div>
+                <div class="timer__block">
+                    <span class="hours">3</span>
+                    <p class="timer-text">часов</p>
+                </div>
+                <div class="timer__block">
+                    <span class="minutes">23</span>
+                    <p class="timer-text">минут</p>
+                </div>
+                <div class="timer__block">
+                    <span class="seconds">3</span>
+                    <p class="timer-text">секунд</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s2">
+            <h2>Новогодние традиции</h2>
+            <h3>Какие они бывают</h3>
+            <div class="item-wrap">
+                <div class="img-wrap" style="width: 320px; flex-direction: column;">
+                    <img style="width: 100%;" src="data:image/jpeg;base64,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" alt="" class="img-item">
+                    <img style="width: 100%;" src="https://d.wattpad.com/story_parts/827659953/images/15e9d2f6c2600d2c751884380174.jpg" alt="" class="img-item">
+                </div>
+                <p class="gift-text" style="width: 500px;">
+                    Для каждого россиянина этот праздник представляет особую ценность. Но главное, что всех объединяет, — это возможность собраться в теплом семейном кругу и вспомнить все самое лучшее, что было в уходящем году, поднять бокалы с шампанским под бой курантов, пожелать своим родным и близким крепкого здоровья, благополучия и успеха во всех начинаниях в будущем году. 
+
+К Новому году жители России готовятся задолго до его наступления. Праздничная эйфория охватывает людей уже в начале декабря. Все магазины предлагают новогодний ассортимент елочных украшений, деликатесов на праздничный стол, мандарины и апельсины, шампанское. Под открытым небом устраивают елочные базары, ярмарки. Все озабочены выбором подарков, продуктов на длинные выходные.  Люди торопятся успеть завершить начатое в старом году, чтобы не накапливалось недоделанных дел в будущем, так как это считается плохим знаком.
+
+31 декабря стараются успеть убрать дом, квартиру, нарядить елку. С утра на кухне готовят праздничные блюда: селедка под шубой, холодец, голубцы… Особой чести, конечно, удостаивается всем полюбившийся салат оливье. Новогодний стол должен быть полон яств, чтобы изобилие не покидало в предстоящем году. 
+
+Некоторые 31 декабря совершают «обряд очищения» — отправляются в русскую баню. С чистыми помыслами в чистом теле праздник становится намного ярче, а настроение — лучше.
+
+По традиции в последний день уходящего года по телевизору покаывают всем полюбившиеся культовые фильмы: «Ирония судьбы, или с лёгким паром!», «Карнавальная ночь», «Девчата», «Джентльмены удачи», «Морозко», «Новогодние приключения Маши и Вити», «Чародеи» и другие.
+
+За пять минут до нового года, в 23:55, все собираются у телевизора и слушают поздравительную речь главы государства (эта традиция была введена Леонидом Брежневым в 1976 году). Ровно в полночь раздается бой курантов и все зажигают бенгальские огни, открывают шампанское и под звон бокалов  поздравляют друг друга с Новым годом. Некоторые после наступления Нового года идут на улицу запускать фейерверки. Кто-то предпочитает встречать праздник у главной елки города на площади и затем веселиться в шумной толпе людей, распевая песни, танцуя под громкую музыку. Кто-то остается дома и смотрит по телевидению традиционные «Голубые огоньки».
+
+В Новый год необходимо вступать только с хорошим настроением, ведь существует поверье: «Как Новый год встретишь, так его и проведешь!» 
+                    
+                </p>
+                <div class="img-wrap" style="width: 320px; flex-direction: column;">
+                    <img style="width: 100%;" src="https://d.wattpad.com/story_parts/813535923/images/15dec1d55989b10c678573157283.jpg" alt="" class="img-item">
+                    <img style="width: 100%;" src="data:image/jpeg;base64,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" alt="" class="img-item">
+                </div>
+            </div>
+        </section>
+
+        <section id="s3">
+            <h2>Новогодние подарки</h2>
+            <h3>Как подобрать подарок</h3>
+            <div class="item-wrap">
+                <div class="img-wrap">
+                    <img src="https://i.pinimg.com/236x/6b/18/55/6b1855115fb3b18e1b93b830e6a8994a.jpg" alt="" class="img-item">
+                    <img src="https://i.pinimg.com/236x/ce/67/3f/ce673f8735ebae65245b369eafd17952.jpg" alt="" class="img-item">
+                    <img src="https://1podarky.ru/wp-content/uploads/2019/11/shto-podaryt-na-ng.jpg" alt="" class="img-item">
+                    <img src="https://корпоративные-подарки.бел/wa-data/public/shop/products/84/69/16984/images/80372/80372.500.jpg" alt="" class="img-item">
+                </div>
+                <p class="gift-text">
+                    Новый год– это самый любимый праздник большинства взрослых и детей, ведь в ночь с 31 декабря на 1 января (а в большинстве стран начало года приходится именно на эти числа) случаются самые настоящие чудеса!
+
+                    С нетерпением, волнением и радостью люди ждут наступления торжественной ночи. Подготовка к празднику начинается заранее, и к концу декабря уже вовсю сверкают огнями улицы городов, а в каждом доме стоит наряженная елка.
+                </p>
+            </div>
+            <iframe width="100%" height="515" src="https://www.youtube.com/embed/GsPMIhkcbfc?si=mohQCW-ehLplN5xa"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loop controls=0>
+            </iframe>
+        </section>
+
+        <section id="s4">
+            <div class="img-group">
+                <div class="img-podgroup">
+                    <img src="https://pics.craiyon.com/2023-10-13/09a4a9850645422daa2bbd9fc5f8ca64.webp" alt="" class="img-gallery">
+                    <img src="https://pics.craiyon.com/2023-12-08/bHKgbF6dQCyySG3t8IkrDw.webp" alt="" class="img-gallery">
+                </div>
+                <img src="https://pics.craiyon.com/2023-12-08/F6ngIykBQ4-xPwH-bgts9w.webp" alt="" class="img-single">
+            </div>
+
+            <div class="img-group">
+                <img src="https://pics.craiyon.com/2023-09-11/53c067b960f94fb085c6a206d35f5bb3.webp" alt="" class="img-single">
+                <div class="img-podgroup">
+                    <img src="https://pics.craiyon.com/2023-10-15/609c7b00ef514f1c95ec99d07fec1369.webp" alt="" class="img-gallery">
+                    <img src="https://pics.craiyon.com/2023-12-08/Itf8GdMfTGe4SAb1tFgzKg.webp" alt="" class="img-gallery">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>сделала Амельченя Елизавета</h3>
+        <h3>картинки из сайта были сделаны в искуственном интелекте</h3>
+    </footer>
+    <script src="timer.js"></script>
+</body>
+
+</html>
+
